@@ -5,4 +5,6 @@
 #set variables for NIC and Team names
 $TeamName='your_team_name'
 $VMSwitch='your_switch_name'
-New-VMSwitch -AllowNetLbfoTeams $true -NetAdapterName $TeamName -Name $VMSwitch' -AllowManagementOS
+New-VMSwitch -AllowNetLbfoTeams -AllowManagementOS $true -NetAdapterName $TeamName -Name $VMSwitch
+
+
